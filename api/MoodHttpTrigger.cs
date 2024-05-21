@@ -41,22 +41,22 @@ public static class MoodHttpTrigger
         switch (mood?.ToLower())
         {
             case "happy":
-                message = $"Hey {name}! It's awesome to see you happy! 😊";
+                message = $"Hey {name}! ¡Es genial verte feliz!! 😊";
                 break;
             case "sad":
-                message = $"Oh no, {name}. I'm here if you need to talk. 😢";
+                message = $"Oh no, {name}. Estoy aquí si necesitas hablar. 😢";
                 break;
             case "excited":
-                message = $"Wow {name}! Your excitement is contagious! 🎉";
+                message = $"Wow {name}! Tu emoción es contagiosa! 🎉";
                 break;
             case "angry":
-                message = $"Take a deep breath, {name}. Everything will be fine. 😡";
+                message = $"Respira hondo, {name}. Everything will be fine. 😡";
                 break;
             case "bored":
-                message = $"Hey {name}, why don't you try learning a new skill? 🤔";
+                message = $"Hey {name}, ¿Por qué no intentas aprender una nueva habilidad? 🤔";
                 break;
             default:
-                message = $"Hello {name}! Here's a joke for you: Why don't scientists trust atoms? Because they make up everything! 😂";
+                message = $"Hola {name}! Aquí tienes un chiste: ¿Por qué los científicos no confían en los átomos? ¡Porque ellos lo componen todo! 😂";
                 break;
         }
 

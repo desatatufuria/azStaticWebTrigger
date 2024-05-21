@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mi Página Web Estática está actualizada</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Trigger!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Hola de nuevo!!</h1>
-    <p>Este es un ejemplo de una página web estática desplegada en Azure Static Web Apps..</p>
+    <div>
+        <h2>Dinos tu estado de ánimo</h2>
+        <form id="moodForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="mood">Estado de ánimo:</label>
+            <select id="mood" name="mood" required>
+                <option value="" disabled selected>Selecciona tu estado de ánimo</option>
+                <option value="happy">Feliz</option>
+                <option value="sad">Triste</option>
+                <option value="excited">Emocionado</option>
+                <option value="angry">Enojado</option>
+                <option value="bored">Aburrido</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
